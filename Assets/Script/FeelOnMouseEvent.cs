@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 //システムにOnMouseEventと自分の名前を送り続ける
-public class FellOnMouseEvent : MonoBehaviour {
+public class FeelOnMouseEvent : MonoBehaviour {
     void Start() {
 
     }
@@ -12,17 +12,17 @@ public class FellOnMouseEvent : MonoBehaviour {
     }
 
     //マウス侵入イベント
-    public void OnMouseEnter1() {
-        Debug.Log("Enter");
+    public void OnMouseEnter() {
+        Debug.Log(transform.name);
     }
-
+    /*
     //マウス常駐イベント
-    public void OnMouseOver1() {
+    public void OnMouseOver() {
         Debug.Log("Over");
     }
 
     //マウス退散イベント
-    public void OnMouseExit1() {
+    public void OnMouseExit() {
         Debug.Log("Exit");
-    }
+    }*/
 }
